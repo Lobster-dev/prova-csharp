@@ -1,0 +1,31 @@
+###Listar
+GET https://localhost:5001/api/v1/employee/listar
+
+###Cadastrar
+POST https://localhost:5001/api/v1/employee/create
+Content-Type: application/json
+
+{
+  "nome": "Little bento",
+  "cpf": "12345678912",
+  "salario":1000.00,
+  "dataDeNascimento": "1-1-2001",
+  "email":"123@123.com.br",
+  "createdAt": "2022-09-13T14:13:16.196Z"
+}
+
+###
+GET https://localhost:5001/api/v1/employee/find/string
+
+###
+DELETE https://localhost:5001/api/v1/employee/delete/23
+
+###
+PATCH https://localhost:5001/api/v1/employee/change
+Content-Type: application/json
+
+{
+    "id": 10,
+    "nome": "Little Bento 2",
+    "cpf": "123456789"
+}
